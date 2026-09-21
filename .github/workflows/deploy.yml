@@ -51,6 +51,6 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           kubectl set image deployment/mandi-to-market-optimizer \
-            mandi-to-market=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+            mandi-to-market-app=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
           kubectl rollout status deployment/mandi-to-market-optimizer --timeout=5m
