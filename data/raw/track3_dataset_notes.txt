@@ -1,0 +1,75 @@
+Track 3: AgriTech - Mandi-to-Market Supply Chain Optimizer
+
+This bundle contains synthetic agricultural supply chain data designed for the TransOrg AgentIQ Datathon.
+
+Files included:
+1. track3_mandi_arrivals.csv
+   - Daily crop arrivals at local Mandis
+   - Messy crop names (English/Hindi/Punjabi), mixed quantity units (Quintals, KG, Tonnes), messy dates
+
+2. track3_price_and_msp.json
+   - Wholesale prices and Minimum Support Price (MSP)
+   - Messy currency formats, missing district/mandi IDs, string-based prices
+
+3. track3_weather_sensors.xlsx
+   - IoT weather sensor logs (Temperature, Rainfall, Humidity)
+   - Mixed timezones (UTC vs IST), mixed temperature units (Celsius vs Fahrenheit), mixed rainfall units (mm vs inches)
+
+4. track3_transport_logistics.csv
+   - Truck transit logs from Mandis to Warehouses
+   - Negative transit times, mixed distance units (KM vs Miles), messy vehicle registration numbers
+
+5. track3_mandi_master.csv
+   - Master data for Mandis and Districts
+   - Messy mandi IDs, missing districts, inconsistent mandi types
+
+6. track3_dataset_notes.txt
+   - This file
+
+Expected join keys:
+- Mandi arrivals + Mandi master: mandi_id
+- Prices + Mandi master: mandi_id or district
+- Transport + Mandi master: mandi_id
+- Weather sensors: Needs to be aggregated by date and mapped to districts/mandis via the master table (sensor location mapping is implied or can be assumed 1:1 with districts for simplicity).
+
+Expected student tasks:
+1. Standardize crop names (e.g., map "Wheat", "गेहूं", "Gehun" to a single canonical name).
+2. Standardize mandi_id formats (MANDI001, MANDI-001, mandi_001, M001).
+3. Parse and convert all quantity units to a standard metric (e.g., Quintals). 1 Tonne = 10 Qtl, 1 Qtl = 100 KG.
+4. Parse and convert all distance units to Kilometers.
+5. Clean price strings by removing currency symbols (₹, Rs., INR) and commas.
+6. Handle timezone conversions in weather data (Convert UTC to IST).
+7. Convert Fahrenheit temperatures to Celsius.
+8. Convert inches of rainfall to millimeters.
+9. Identify and handle impossible transit times (negative hours) and missing timestamps.
+10. Standardize vehicle registration numbers.
+11. Build an agricultural supply chain and price discovery dashboard.
+12. Optionally build a graph-first AI agent.
+
+Expected business metrics:
+- Total crop arrivals (in Quintals)
+- Average wholesale modal price vs MSP
+- Price crash instances (Modal Price < MSP)
+- Average transit time by warehouse
+- Transit delay rate
+- Weather impact on arrivals (Correlation between rainfall and arrival volume)
+- Top Mandis by arrival volume
+- Crop-wise arrival distribution
+
+Example dashboard questions:
+- Daily arrival trend of Wheat in Punjab Mandis.
+- Which Mandis are experiencing prices below MSP?
+- Average transit time from Mandi to WH-North.
+- Correlation between heavy rainfall days and crop arrival drops.
+- Top 5 Mandis by total arrival volume this month.
+- Transport routes with the highest delay frequency.
+
+Example agent queries:
+- Plot the daily arrival trend of Wheat in Amritsar mandi vs MSP for the last 30 days.
+- Show total arrivals by crop type.
+- Which mandi has the highest average transit delay?
+- Compare total rainfall by district over the last 3 months.
+- Show the distribution of wholesale prices for Rice.
+- Which warehouse receives the highest volume of crops?
+
+All data is synthetic and generated only for educational/datathon purposes.

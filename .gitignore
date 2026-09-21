@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+data/processed/*.csv
+data/processed/*.json
+.DS_Store
+.streamlit/
+node_modules/
+frontend/node_modules/
+.env
+*.log
+
+frontend/dist/
