@@ -8,8 +8,13 @@ metadata:
     service.beta.kubernetes.io/aws-load-balancer-type: "external"
     service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: "instance"
     service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing"
+
+    service.beta.kubernetes.io/aws-load-balancer-subnets: "subnet-0a3ee67e39e71f782,subnet-0293f42744845a3ad,subnet-09fc755b1fe0b227a"
+
+    service.beta.kubernetes.io/aws-load-balancer-eip-allocations: "eipalloc-07359aa1db1f1865d,eipalloc-0a8d6705232a8bdfe,eipalloc-0d92ae1a1f610c0f4"
+
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
     - port: 80
       targetPort: 8000

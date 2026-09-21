@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: mandi-to-market-app
-          image: <AWS_ACCOUNT_ID>.dkr.ecr.<AWS_REGION>.amazonaws.com/mandi-to-market-optimizer:latest
+          image: 556880009395.dkr.ecr.eu-north-1.amazonaws.com/mandi-to-market-optimizer:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
