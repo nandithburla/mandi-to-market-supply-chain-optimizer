@@ -59,18 +59,18 @@ It couples statistical ML algorithms with a **database-grounded AI Agricultural 
 
 The complete project technical manual is structured across 10 specialized documents:
 
-| # | Document | Scope & Purpose |
-| :-: | :--- | :--- |
-| **01** | [**`01 — Project Overview`**](docs/01_project_overview.md) | Vision, problem space, business value, and solution overview |
-| **02** | [**`02 — Project Workflow`**](docs/02_project_workflow.md) | Complete end-to-end data, ML, AI, and deployment lifecycle |
-| **03** | [**`03 — Project Structure`**](docs/03_project_structure.md) | Comprehensive directory map, component breakdown, and file guide |
-| **04** | [**`04 — Setup & Local Run`**](docs/04_setup_and_local_run.md) | Step-by-step local environment setup, virtual environments, and testing |
-| **05** | [**`05 — Architecture`**](docs/05_architecture.md) | In-depth technical architecture, EC2 gateway, and EKS pod routing |
-| **06** | [**`06 — Methodology`**](docs/06_methodology.md) | Mathematical formulation of Holt Forecasting, IQR, Z-Score, and Risk Index |
-| **07** | [**`07 — Data Dictionary`**](docs/07_data_dictionary.md) | Complete schema definitions for all database tables, columns, and SQL views |
-| **08** | [**`08 — AWS Deployment`**](docs/08_aws_deployment.md) | Complete AWS infrastructure guide: EKS, ECR, NodePort, and EC2 Gateway |
-| **09** | [**`09 — GitHub Actions`**](docs/09_github_actions.md) | CI/CD automation pipeline with passwordless AWS IAM OIDC security |
-| **10** | [**`10 — Errors & Solutions`**](docs/10_errors_and_solutions.md) | Troubleshooting handbook for deployment, Kubernetes, CORS, and Docker |
+| #      | Document                                                                                                                                          | Scope & Purpose                                                             |
+| :------:| :--------------------------------------------------------------------------------------------------------------------------------------------------| :----------------------------------------------------------------------------|
+| **01** | [**`01 — Project Overview`**](https://github.com/nandithburla/mandi-to-market-supply-chain-optimizer/blob/main/docs/01_PROJECT_OVERVIEW.md)       | Vision, problem space, business value, and solution overview                |
+| **02** | [**`02 — Project Workflow`**](https://github.com/nandithburla/mandi-to-market-supply-chain-optimizer/blob/main/docs/02_PROJECT_WORKFLOW.md)       | Complete end-to-end data, ML, AI, and deployment lifecycle                  |
+| **03** | [**`03 — Project Structure`**](https://github.com/nandithburla/mandi-to-market-supply-chain-optimizer/blob/main/docs/03_PROJECT_STRUCTURE.md)     | Comprehensive directory map, component breakdown, and file guide            |
+| **04** | [**`04 — Setup & Local Run`**](https://github.com/nandithburla/mandi-to-market-supply-chain-optimizer/blob/main/docs/04_SETUP_AND_LOCAL_RUN.md)   | Step-by-step local environment setup, virtual environments, and testing     |
+| **05** | [**`05 — Architecture`**](https://github.com/nandithburla/mandi-to-market-supply-chain-optimizer/blob/main/docs/05_ARCHITECTURE.md)               | In-depth technical architecture, EC2 gateway, and EKS pod routing           |
+| **06** | [**`06 — Methodology`**](https://github.com/nandithburla/mandi-to-market-supply-chain-optimizer/blob/main/docs/06_METHODOLOGY.md)                 | Mathematical formulation of Holt Forecasting, IQR, Z-Score, and Risk Index  |
+| **07** | [**`07 — Data Dictionary`**](https://github.com/nandithburla/mandi-to-market-supply-chain-optimizer/blob/main/docs/07_DATA_DICTIONARY.md)         | Complete schema definitions for all database tables, columns, and SQL views |
+| **08** | [**`08 — AWS Deployment`**](https://github.com/nandithburla/mandi-to-market-supply-chain-optimizer/blob/main/docs/08_AWS_DEPLOYMENT.md)           | Complete AWS infrastructure guide: EKS, ECR, NodePort, and EC2 Gateway      |
+| **09** | [**`09 — GitHub Actions`**](https://github.com/nandithburla/mandi-to-market-supply-chain-optimizer/blob/main/docs/09_GITHUB_ACTIONS.md)           | CI/CD automation pipeline with passwordless AWS IAM OIDC security           |
+| **10** | [**`10 — Errors & Solutions`**](https://github.com/nandithburla/mandi-to-market-supply-chain-optimizer/blob/main/docs/10_ERRORS_AND_SOLUTIONS.md) | Troubleshooting handbook for deployment, Kubernetes, CORS, and Docker       |
 
 ---
 
